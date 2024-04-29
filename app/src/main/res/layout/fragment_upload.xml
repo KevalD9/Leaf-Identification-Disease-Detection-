@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2baf972">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relLayout1">
+
+
+                <ImageView
+                    android:id="@+id/post_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="321dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_image_black_24dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/post_image"
+                    android:id="@+id/relLayout2"
+                    android:layout_marginTop="30dp"
+                    >
+
+
+                    <Button
+                        android:id="@+id/camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="60dp"
+                        android:background="@drawable/custom_button"
+                        android:hint="Camera"
+                        android:padding="10dp"
+                        android:text="Take a picture"
+                        android:textColor="@color/Black"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relLayout2"
+                    android:id="@+id/relLayout9">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+
+                        android:id="@+id/relLayout3"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+
+                        <Button
+                            android:id="@+id/gallery"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:background="@drawable/custom_button"
+                            android:hint="Camera"
+                            android:padding="10dp"
+                            android:text="UPLOAD FROM GALLERY"
+                            android:textColor="@color/Black"
+                            android:textSize="18sp" />
+
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/relLayout3"
+                        android:id="@+id/relLayout4"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp">
+
+
+                        <TextView
+                            android:id="@+id/input_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:hint="Name of Plant"
+                            android:text="OPTIONS :"
+                            android:textColor="@color/Black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/relLayout4"
+                        android:layout_marginTop="15dp"
+                        android:padding="10dp">
+
+
+                        <Button
+                            android:id="@+id/leafClass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginRight="60dp"
+                            android:background= "@drawable/custom_button"
+                            android:hint="Camera"
+                            android:padding="10dp"
+                            android:text="LEAF CLASSIFICATION"
+                            android:textColor="@color/Black"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/relLayout5"
+                        android:id="@+id/relLayout6"
+                        android:padding="10dp">
+
+
+                        <Button
+                            android:id="@+id/disidentify"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginRight="60dp"
+                            android:background= "@drawable/custom_button"
+                            android:hint="Camera"
+                            android:padding="10dp"
+                            android:text="DISEASE IDENTIFICATION"
+                            android:textColor="@color/Black"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
